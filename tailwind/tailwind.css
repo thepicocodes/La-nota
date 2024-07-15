@@ -35,3 +35,46 @@
  */
 @import "tailwindcss/utilities";
 @import "./custom/utilities.css";
+@import "../node_modules/swiper/swiper-bundle.min.css";
+
+#radio-select {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+#radio-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+#radio-select::after {
+  font-family: FontAwesome;
+  content: '\f078';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+  color: #F7840C;
+}
+
+.program-title{
+  color: red;
+}
+.station-live{
+  border-radius: 4px;
+  padding: 2px 4px;
+  background: red;
+  color: white;
+}
+
+.lotery-swiper-pagination{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
